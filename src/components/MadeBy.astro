@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import openAi from '../assets/openai.png';
+import dalle from '../assets/dall-e.png';
+---
+<div class="bg-gray-900 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
+        <div class="mx-auto w-full max-w-xl lg:mx-0">
+          <h2 class="text-3xl font-bold tracking-tight text-white">Designed with the most advanced artificial intelligence tools and the ingenuity of a human mind.</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-300">While artificial intelligences excel in generating images, they cannot match the unique ability of humans to dream, conceive, and create. That's why our collection is a harmonious blend of human boundless imagination and the extraordinary capabilities of technology.</p>
+        </div>
+        <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
+            <Image src={openAi} alt="Open AI" class="max-h-10 w-full object-contain object-left" width="105" height="48" />
+            <Image src={dalle} alt="Dall-E" class="max-h-10 w-full object-contain object-left" width="105" height="48" />
+        </div>
+      </div>
+    </div>
+  </div>
+  

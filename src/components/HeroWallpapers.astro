@@ -31,17 +31,18 @@ const wallpapers = await getCollection('wallpapers');
                 Explore our stunning collection of smartphone wallpapers, created and designed through the power and creativity of artificial intelligence.
             </p>
           </div>
-          <!-- For each Wallpaper in wallpapers -->
-          {wallpapers.map((item) => (
-            <Image
-              src={item.data.image}
-              loading="lazy"
-              height='800'
-              alt="Wallpaper with AI generated image. Filename: {item.data.image}"
-              class="mx-auto text-center mt-16 rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 sm:mt-24" />
-           ))}
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">
+            <!-- For each Wallpaper in wallpapers -->
+            {wallpapers.map((item) => (
+              <Image
+                src={item.data.image}
+                loading="lazy"
+                height='800'
+                alt="Wallpaper with AI generated image. Filename: {item.data.image}"
+                class="mx-auto text-center rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10" />
+            ))}
+          </div>
         </div>
       </div>
     </div>
   </div>
-  
